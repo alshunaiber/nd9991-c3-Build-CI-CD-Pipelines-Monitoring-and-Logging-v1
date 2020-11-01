@@ -14,7 +14,7 @@
 
 - name: Create EC2 instances
   ec2:
-    key_name: Jenkins_demo
+    key_name: bastion-key
     instance_type: t2.nano
     image: ami-07a29e5e945228fa1
     user_data: "{{ USERDATA }}"
